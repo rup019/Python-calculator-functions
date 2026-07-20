@@ -1,0 +1,24 @@
+def calculator(x,y,operator):
+    if operator == '+':
+        return x+y
+    elif operator == '-':
+        return x-y
+        
+    elif operator == '*':
+        return x*y
+        
+    elif operator == '//':
+        return x//y
+       
+    elif operator == '/' and y == 0:
+        return "error:division by zero"
+        
+    elif operator == '/':
+        return x / y
+
+    else:
+        return "error:invalid operator"
+        
+print(calculator(1,0,'/'))
+print(calculator(10,5,'//'))
+print(calculator(5,5,'*'))
