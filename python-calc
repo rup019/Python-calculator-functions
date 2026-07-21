@@ -1,14 +1,19 @@
 def calculator(x,y,operator):
+    
     if operator == '+':
         return x+y
+        
     elif operator == '-':
         return x-y
         
     elif operator == '*':
         return x*y
         
+    elif operator == '//' and y == 0:
+        return "error:division by zero"
+        
     elif operator == '//':
-        return x//y
+         return x//y
        
     elif operator == '/' and y == 0:
         return "error:division by zero"
